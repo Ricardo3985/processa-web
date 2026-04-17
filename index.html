@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Processa — IA que impacta tu P&L</title>
+<meta name="description" content="Consultoría enterprise en agentes de IA para automatizar procesos críticos en retail y tecnología. ROI medible desde el primer proyecto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1628;--navy-mid:#0f1f3d;--navy-light:#162847;--blue:#2563eb;--blue-light:#3b82f6;--blue-glow:rgba(37,99,235,0.15);--white:#ffffff;--w80:rgba(255,255,255,0.8);--w50:rgba(255,255,255,0.5);--w20:rgba(255,255,255,0.12);--accent:#7ba3d4}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 4rem;display:flex;align-items:center;justify-content:space-between;background:rgba(10,22,40,0.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--w20)}
+.nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.logo-icon{display:flex;align-items:center;gap:5px}
+.ld{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.ld.lg{width:12px;height:12px;border:2px solid var(--blue);background:transparent;position:relative}
+.ld.lg::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:4px;height:4px;border-radius:50%;background:var(--blue)}
+.ll{width:14px;height:2px;background:var(--blue)}
+.logo-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--white);letter-spacing:2px}
+.nav-cta{background:var(--blue);color:var(--white);padding:.55rem 1.4rem;border-radius:4px;text-decoration:none;font-size:.85rem;font-weight:500;transition:background .2s}
+.nav-cta:hover{background:var(--blue-light)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:8rem 4rem 5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-200px;right:-200px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.12) 0%,transparent 70%);pointer-events:none}
+.hero-content{max-width:750px;position:relative;z-index:1}
+.hero-tag{display:inline-block;border:1px solid var(--blue);color:var(--accent);font-size:.75rem;letter-spacing:2px;padding:.35rem .9rem;border-radius:2px;margin-bottom:2rem;text-transform:uppercase}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);line-height:1.15;margin-bottom:1.5rem}
+.hero h1 em{font-style:normal;color:var(--blue-light)}
+.hero-sub{font-size:1.1rem;color:var(--w80);max-width:580px;margin-bottom:2.5rem;line-height:1.8}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--blue);color:var(--white);padding:.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:500;font-size:.95rem;transition:background .2s,transform .2s}
+.btn-primary:hover{background:var(--blue-light);transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--w50);color:var(--w80);padding:.85rem 2rem;border-radius:4px;text-decoration:none;font-size:.95rem;transition:border-color .2s,color .2s}
+.btn-ghost:hover{border-color:var(--white);color:var(--white)}
+.stats{background:var(--navy-light);border-top:1px solid var(--w20);border-bottom:1px solid var(--w20);padding:2.5rem 4rem;display:flex;justify-content:center}
+.stat{flex:1;text-align:center;padding:0 2rem;border-right:1px solid var(--w20)}
+.stat:last-child{border-right:none}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--blue-light);display:block}
+.stat-label{font-size:.8rem;color:var(--w50);letter-spacing:1px;text-transform:uppercase}
+section{padding:6rem 4rem}
+.section-tag{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--blue-light);margin-bottom:1rem}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2;margin-bottom:1.5rem}
+.section-intro{font-size:1.05rem;color:var(--w80);max-width:600px;margin-bottom:3.5rem;line-height:1.8}
+.problema{background:var(--navy-mid)}
+.problema-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.problema-card{background:var(--navy);border:1px solid var(--w20);border-top:2px solid var(--blue);padding:2rem;border-radius:2px;transition:border-color .2s}
+.problema-card:hover{border-color:var(--blue-light)}
+.problema-card h3{font-size:1rem;font-weight:500;margin-bottom:.75rem}
+.problema-card p{font-size:.9rem;color:var(--w50);line-height:1.7}
+.paradigma-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:900px}
+.paradigma-box{padding:2.5rem;border-radius:4px;border:1px solid var(--w20)}
+.paradigma-box.reactiva{background:var(--navy-mid);opacity:.7}
+.paradigma-box.proactiva{background:var(--blue-glow);border-color:var(--blue)}
+.paradigma-label{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.paradigma-box h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:1.2rem}
+.paradigma-list{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.paradigma-list li{font-size:.9rem;color:var(--w80);padding-left:1.2rem;position:relative}
+.paradigma-list li::before{content:'→';position:absolute;left:0;color:var(--blue-light)}
+.paradigma-box.reactiva .paradigma-list li::before{color:var(--w50)}
+.diferenciadores{background:var(--navy-mid)}
+.dif-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.dif-card{padding:2.5rem 2rem;border-left:2px solid var(--blue);background:var(--navy)}
+.dif-num{font-family:'Playfair Display',serif;font-size:3rem;color:rgba(37,99,235,.2);line-height:1;margin-bottom:1rem}
+.dif-card h3{font-size:1rem;font-weight:500;margin-bottom:.75rem}
+.dif-card p{font-size:.88rem;color:var(--w50);line-height:1.7}
+.metodologia-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.metodologia-steps::before{content:'';position:absolute;top:2.2rem;left:16%;right:16%;height:1px;background:var(--blue);opacity:.4}
+.step{padding:0 2rem 2rem;text-align:center}
+.step-circle{width:44px;height:44px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-weight:500;font-size:.9rem;position:relative;z-index:1}
+.step-time{font-size:.7rem;letter-spacing:2px;color:var(--blue-light);text-transform:uppercase;margin-bottom:.5rem}
+.step h3{font-size:1rem;font-weight:500;margin-bottom:.75rem}
+.step p{font-size:.85rem;color:var(--w50);line-height:1.7}
+.casos{background:var(--navy-mid)}
+.casos-table{width:100%;border-collapse:collapse;font-size:.88rem}
+.casos-table thead tr{border-bottom:1px solid var(--blue)}
+.casos-table th{text-align:left;padding:1rem 1.2rem;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:400}
+.casos-table td{padding:1.2rem 1.2rem;color:var(--w80);border-bottom:1px solid var(--w20);vertical-align:top;line-height:1.6}
+.casos-table tr:hover td{background:var(--w20)}
+.area-badge{display:inline-block;font-size:.7rem;letter-spacing:1px;text-transform:uppercase;color:var(--blue-light);border:1px solid var(--blue);padding:.2rem .6rem;border-radius:2px}
+.metric{color:var(--blue-light);font-weight:500}
+.spotlight{background:var(--blue-glow);border:1px solid var(--blue);border-radius:4px;padding:3rem;margin-top:3rem}
+.spotlight h3{font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:.5rem}
+.spotlight-sub{color:var(--w50);font-size:.9rem;margin-bottom:2.5rem}
+.spotlight-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.spotlight-metric{text-align:center}
+.spotlight-metric .big{font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--blue-light);display:block;line-height:1;margin-bottom:.4rem}
+.spotlight-metric .label{font-size:.78rem;color:var(--w50)}
+.sobre-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start}
+.sobre-left p{font-size:.95rem;color:var(--w80);line-height:1.8;margin-bottom:1.5rem}
+.credenciales{display:flex;flex-direction:column;gap:1rem}
+.credencial{padding:1.2rem;background:var(--navy-mid);border-left:2px solid var(--blue)}
+.credencial-empresa{font-weight:500;font-size:.9rem;color:var(--white);margin-bottom:.2rem}
+.credencial-detalle{font-size:.82rem;color:var(--w50);line-height:1.5}
+.sistemas{margin-top:2rem;padding:1.5rem;background:var(--navy-mid);border:1px solid var(--w20)}
+.sistemas-label{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem}
+.sistemas-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.tag{font-size:.78rem;border:1px solid var(--w20);color:var(--w50);padding:.25rem .7rem;border-radius:2px}
+.contacto{background:var(--navy-mid);text-align:center}
+.contacto h2{margin-bottom:.75rem}
+.contacto-sub{color:var(--w80);margin-bottom:.5rem;font-size:1rem}
+.contacto-detail{color:var(--w50);font-size:.9rem;margin-bottom:2.5rem}
+.contacto-form{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+input,textarea{background:var(--navy);border:1px solid var(--w20);color:var(--white);padding:.85rem 1rem;font-family:'DM Sans',sans-serif;font-size:.9rem;border-radius:3px;width:100%;transition:border-color .2s;outline:none}
+input:focus,textarea:focus{border-color:var(--blue)}
+input::placeholder,textarea::placeholder{color:var(--w50)}
+textarea{height:120px;resize:vertical}
+.form-submit{background:var(--blue);color:var(--white);border:none;padding:.95rem;font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:500;border-radius:3px;cursor:pointer;transition:background .2s;letter-spacing:.5px;width:100%}
+.form-submit:hover{background:var(--blue-light)}
+footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;display:flex;align-items:center;justify-content:space-between}
+.footer-left,.footer-right{font-size:.82rem;color:var(--w50)}
+.footer-right a{color:var(--accent);text-decoration:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.hero-content>*{animation:fadeUp .7s ease both}
+.hero-tag{animation-delay:.1s}.hero h1{animation-delay:.2s}.hero-sub{animation-delay:.35s}.hero-actions{animation-delay:.5s}
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}
+  section{padding:4rem 1.5rem}
+  .hero{padding:7rem 1.5rem 4rem}
+  .stats{padding:2rem 1.5rem;flex-wrap:wrap}
+  .stat{min-width:45%;border-right:none;border-bottom:1px solid var(--w20);padding:1rem}
+  .paradigma-grid,.dif-grid,.metodologia-steps,.sobre-inner{grid-template-columns:1fr}
+  .metodologia-steps::before{display:none}
+  .spotlight-metrics{grid-template-columns:repeat(2,1fr)}
+  .form-row{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:.5rem;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-icon">
+      <div class="ld"></div><div class="ll"></div>
+      <div class="ld lg"></div><div class="ll"></div>
+      <div class="ld"></div>
+    </div>
+    <span class="logo-name">PROCESSA</span>
+  </a>
+  <a href="#contacto" class="nav-cta">Diagnóstico gratuito</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-tag">Consultoría Enterprise · Retail &amp; Tecnología · LATAM</span>
+    <h1>IA que impacta<br>tu <em>P&amp;L</em> —<br>no solo tus procesos</h1>
+    <p class="hero-sub">Automatizamos procesos críticos con agentes de IA que observan, deciden y ejecutan. ROI comprobable en el P&amp;L desde el primer proyecto.</p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Agendar diagnóstico — 60 min</a>
+      <a href="#metodologia" class="btn-ghost">Ver metodología</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><span class="stat-num">+25</span><span class="stat-label">años experiencia ejecutiva</span></div>
+  <div class="stat"><span class="stat-num">Tier 1</span><span class="stat-label">clientes retail en LATAM</span></div>
+  <div class="stat"><span class="stat-num">−70%</span><span class="stat-label">costo por proceso automatizado</span></div>
+  <div class="stat"><span class="stat-num">30d</span><span class="stat-label">primer piloto con ROI medible</span></div>
+</div>
+
+<section class="problema">
+  <p class="section-tag">El problema</p>
+  <h2>Procesos críticos que frenan<br>tu competitividad hoy</h2>
+  <p class="section-intro">Las empresas líderes enfrentan un desafío estructural: operaciones manuales que generan costos, errores y decisiones tardías.</p>
+  <div class="problema-grid">
+    <div class="problema-card"><h3>Procesos manuales</h3><p>Operaciones críticas aún dependen de intervención humana, generando cuellos de botella, errores y costos evitables.</p></div>
+    <div class="problema-card"><h3>Decisiones tardías</h3><p>Información desactualizada lleva a decisiones financieras con datos obsoletos — impactando directamente el margen.</p></div>
+    <div class="problema-card"><h3>IA sin impacto real</h3><p>IA usada solo como chat o experimentos aislados, sin integración operativa ni impacto medible en el P&amp;L.</p></div>
+    <div class="problema-card"><h3>Baja trazabilidad</h3><p>Ausencia de control y auditabilidad en procesos críticos genera riesgo operativo y de compliance.</p></div>
+  </div>
+</section>
+
+<section>
+  <p class="section-tag">Cambio de paradigma</p>
+  <h2>La diferencia no es técnica,<br>es estratégica</h2>
+  <p class="section-intro">IA proactiva genera impacto estructural en productividad y EBITDA. No es lo mismo responder preguntas que ejecutar decisiones.</p>
+  <div class="paradigma-grid">
+    <div class="paradigma-box reactiva">
+      <div class="paradigma-label">IA Reactiva — mercado actual</div>
+      <h3>Responde cuando le preguntan</h3>
+      <ul class="paradigma-list">
+        <li>Sistemas conversacionales</li>
+        <li>Dependencia del usuario</li>
+        <li>Impacto limitado y puntual</li>
+        <li>Sin integración operativa</li>
+      </ul>
+    </div>
+    <div class="paradigma-box proactiva">
+      <div class="paradigma-label">IA Proactiva — lo que implementamos</div>
+      <h3>Observa, decide y ejecuta</h3>
+      <ul class="paradigma-list">
+        <li>Agentes autónomos end-to-end</li>
+        <li>Iniciativa propia con reglas de negocio</li>
+        <li>Impacto estructural en EBITDA</li>
+        <li>Integración nativa con sistemas legados</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="diferenciadores">
+  <p class="section-tag">Por qué Processa</p>
+  <h2>Tres diferenciadores que<br>definen el resultado</h2>
+  <div class="dif-grid">
+    <div class="dif-card"><div class="dif-num">01</div><h3>Experiencia profunda en Retail y Tecnología</h3><p>El éxito depende de conocer los procesos reales. Venimos de operar y transformar los sistemas que ahora automatizamos — Cencosud, Oracle, clientes Tier 1 LATAM.</p></div>
+    <div class="dif-card"><div class="dif-num">02</div><h3>Sistemas operativos, no chatbots</h3><p>Cada caso de uso se implementa con decisión trazable, explicable y revisable. No vendemos demos — entregamos sistemas que cumplen su objetivo en tiempo y forma.</p></div>
+    <div class="dif-card"><div class="dif-num">03</div><h3>Resultados financieros medibles</h3><p>ROI cuantificado desde el piloto. Impacto en EBITDA visible en el corto plazo. Nos comprometemos con métricas antes de empezar — no después.</p></div>
+  </div>
+</section>
+
+<section id="metodologia">
+  <p class="section-tag">Metodología</p>
+  <h2>De los dolores al ROI,<br>sin atajos</h2>
+  <p class="section-intro">Cada fase entrega valor tangible y prepara la siguiente. Resultados desde el primer día.</p>
+  <div class="metodologia-steps">
+    <div class="step">
+      <div class="step-circle">1</div>
+      <div class="step-time">60 minutos</div>
+      <h3>Diagnóstico ejecutivo</h3>
+      <p>Identificación de oportunidades y priorización por impacto financiero y viabilidad técnica. Sin costo.</p>
+    </div>
+    <div class="step">
+      <div class="step-circle">2</div>
+      <div class="step-time">2 semanas</div>
+      <h3>Levantamiento y propuesta</h3>
+      <p>Procesos As-Is, arquitectura To-Be con IA, roadmap de implementación y propuesta económica con ROI proyectado.</p>
+    </div>
+    <div class="step">
+      <div class="step-circle">3</div>
+      <div class="step-time">30+ días</div>
+      <h3>Piloto y escalamiento</h3>
+      <p>Despliegue en entorno real con métricas definidas. Optimización continua y medición de ROI acumulado.</p>
+    </div>
+  </div>
+</section>
+
+<section class="casos">
+  <p class="section-tag">Casos de uso</p>
+  <h2>Procesos que automatizamos<br>hoy con agentes de IA</h2>
+  <p class="section-intro">Ejemplos reales en retail y tecnología con impacto medible en operaciones y márgenes.</p>
+  <table class="casos-table">
+    <thead><tr><th>Área</th><th>Caso de uso</th><th>Beneficios de referencia</th></tr></thead>
+    <tbody>
+      <tr><td><span class="area-badge">Finanzas</span></td><td>Invoice matching automático (3-way match)</td><td><span class="metric">5 días → &lt;4 horas</span> · Costo por factura −70% · Detección de fraude +60%</td></tr>
+      <tr><td><span class="area-badge">Finanzas</span></td><td>Cierre contable mensual automatizado</td><td><span class="metric">7 días → 2 días</span> · Errores de asientos −90% · Libera 2-3 contadores para análisis</td></tr>
+      <tr><td><span class="area-badge">Comercial</span></td><td>Dynamic pricing automatizado</td><td><span class="metric">Margen bruto +2-4 puntos</span> · Ventas categorías optimizadas +8-12%</td></tr>
+      <tr><td><span class="area-badge">Comercial</span></td><td>Planificación de surtido por tienda</td><td><span class="metric">Rotación de inventario +15-20%</span> · Merma −25% · Tiempo planificación −60%</td></tr>
+      <tr><td><span class="area-badge">Logística</span></td><td>Detección de quiebres de stock en tiempo real</td><td><span class="metric">Quiebres detectados en &lt;15 min</span> vs 4 hrs · Ventas perdidas recuperadas +3-5%</td></tr>
+      <tr><td><span class="area-badge">Logística</span></td><td>Control de recepción de mercadería en CD</td><td><span class="metric">Diferencias no gestionadas −80%</span> · Tiempo de recepción −40%</td></tr>
+    </tbody>
+  </table>
+  <div class="spotlight">
+    <h3>Caso destacado: Invoice Matching</h3>
+    <p class="spotlight-sub">Para empresas con 1.000+ facturas/mes procesadas manualmente — resultados a validar en piloto</p>
+    <div class="spotlight-metrics">
+      <div class="spotlight-metric"><span class="big">−70%</span><span class="label">Costo por factura</span></div>
+      <div class="spotlight-metric"><span class="big">4h</span><span class="label">Ciclo de pago (vs 5 días)</span></div>
+      <div class="spotlight-metric"><span class="big">+60%</span><span class="label">Detección de fraude</span></div>
+      <div class="spotlight-metric"><span class="big">80%+</span><span class="label">Aprobación automática</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre">
+  <div class="sobre-inner">
+    <div class="sobre-left">
+      <p class="section-tag">El fundador</p>
+      <h2>Ricardo Valenzuela G.</h2>
+      <p>Ingeniero Civil Industrial (UTFSM) + MBA (UAI). Más de 25 años liderando transformación digital y ecommerce en empresas de retail y tecnología de primer nivel en Chile y LATAM.</p>
+      <p>Antes de fundar Processa: Business &amp; Innovation Architect en Oracle LATAM (2019–2026) y Gerente de Negocios Digitales en Cencosud (2007–2016).</p>
+    </div>
+    <div class="sobre-right">
+      <div class="credenciales">
+        <div class="credencial"><div class="credencial-empresa">Oracle LATAM — 7 años</div><div class="credencial-detalle">Business &amp; Innovation Architect. Asesoría a C-levels de retail Tier 1. Cierre de oportunidades USD 1.5M+ anuales. Clientes: Inretail, Cencosud, ABC, D1 Colombia, GDN Argentina.</div></div>
+        <div class="credencial"><div class="credencial-empresa">Cencosud — 12 años</div><div class="credencial-detalle">Lanzamiento eCommerce Easy.cl y easy.com.ar. Roadmap omnicanal con Accenture y Javelin UK. Crecimiento sostenido +50% anual en ventas digitales.</div></div>
+        <div class="credencial"><div class="credencial-empresa">Poder Digital — CDO Consultor</div><div class="credencial-detalle">Roadmaps estratégicos para 11 empresas. Caso Electrolux: ecosistema eCommerce y logística en 8 meses.</div></div>
+      </div>
+      <div class="sistemas">
+        <div class="sistemas-label">Sistemas de experiencia</div>
+        <div class="sistemas-tags">
+          <span class="tag">ERP</span><span class="tag">WMS</span><span class="tag">TMS</span><span class="tag">OMS</span><span class="tag">POS</span><span class="tag">CRM</span><span class="tag">Oracle Cloud</span><span class="tag">Agentes IA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <p class="section-tag">Contacto</p>
+  <h2>¿Conversamos?</h2>
+  <p class="contacto-sub">Diagnóstico inicial sin costo · 60 minutos · Sin compromiso</p>
+  <p class="contacto-detail">Identificamos el primer proceso con ROI en 2 semanas</p>
+  <form class="contacto-form" action="mailto:ricardo@processa.work" method="post" enctype="text/plain">
+    <div class="form-row">
+      <input type="text" name="Nombre" placeholder="Nombre" required>
+      <input type="text" name="Empresa" placeholder="Empresa" required>
+    </div>
+    <input type="email" name="Email" placeholder="Email corporativo" required>
+    <textarea name="Mensaje" placeholder="¿Qué proceso te gustaría automatizar?"></textarea>
+    <button type="submit" class="form-submit">Agendar diagnóstico gratuito</button>
+  </form>
+  <p style="margin-top:1.5rem;font-size:.85rem;color:var(--w50)">O escríbenos directamente a <a href="mailto:ricardo@processa.work" style="color:var(--accent)">ricardo@processa.work</a></p>
+</section>
+
+<footer>
+  <div class="footer-left">© 2026 Processa · processa.work</div>
+  <div class="footer-right"><a href="mailto:ricardo@processa.work">ricardo@processa.work</a> · <a href="https://linkedin.com/in/rvalenzuelag" target="_blank">LinkedIn</a></div>
+</footer>
+
+<script>
+function handleForm(e){
+  e.preventDefault();
+  const btn=e.target.querySelector('.form-submit');
+  btn.textContent='¡Mensaje enviado! Te contactamos pronto.';
+  btn.style.background='#16a34a';
+  btn.disabled=true;
+}
+</script>
+</body>
+</html>
