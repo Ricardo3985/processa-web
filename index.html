@@ -61,13 +61,13 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-
 .paradigma-list li::before{content:'→';position:absolute;left:0;color:var(--blue-light)}
 .paradigma-box.reactiva .paradigma-list li::before{color:var(--w50)}
 .diferenciadores{background:var(--navy-mid)}
-.dif-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.dif-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem}
 .dif-card{padding:2.5rem 2rem;border-left:2px solid var(--blue);background:var(--navy)}
 .dif-num{font-family:'Playfair Display',serif;font-size:3rem;color:rgba(37,99,235,.2);line-height:1;margin-bottom:1rem}
 .dif-card h3{font-size:1rem;font-weight:500;margin-bottom:.75rem}
 .dif-card p{font-size:.88rem;color:var(--w50);line-height:1.7}
-.metodologia-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
-.metodologia-steps::before{content:'';position:absolute;top:2.2rem;left:16%;right:16%;height:1px;background:var(--blue);opacity:.4}
+.metodologia-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.metodologia-steps::before{content:'';position:absolute;top:2.2rem;left:12%;right:12%;height:1px;background:var(--blue);opacity:.4}
 .step{padding:0 2rem 2rem;text-align:center}
 .step-circle{width:44px;height:44px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-weight:500;font-size:.9rem;position:relative;z-index:1}
 .step-time{font-size:.7rem;letter-spacing:2px;color:var(--blue-light);text-transform:uppercase;margin-bottom:.5rem}
@@ -97,7 +97,7 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-
 .sistemas{margin-top:2rem;padding:1.5rem;background:var(--navy-mid);border:1px solid var(--w20)}
 .sistemas-label{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem}
 .sistemas-tags{display:flex;flex-wrap:wrap;gap:.5rem}
-.tag{font-size:.78rem;border:1px solid var(--w20);color:var(--w50);padding:.25rem .7rem;border-radius:2px}
+.stag{font-size:.78rem;border:1px solid var(--w20);color:var(--w50);padding:.25rem .7rem;border-radius:2px}
 .contacto{background:var(--navy-mid);text-align:center}
 .contacto h2{margin-bottom:.75rem}
 .contacto-sub{color:var(--w80);margin-bottom:.5rem;font-size:1rem}
@@ -132,7 +132,7 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
 </style>
 </head>
 <body>
- 
+
 <nav>
   <a href="#" class="nav-logo">
     <div class="logo-icon">
@@ -144,12 +144,13 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
   </a>
   <a href="#contacto" class="nav-cta">Diagnóstico gratuito</a>
 </nav>
- 
+
 <section class="hero">
   <div class="hero-content">
-    <span class="hero-tag">Implementaciones de IA con resultados concretos</span>
-    <h1>IA con foco en la<br>mejora de <em>resultados</em><br> medibles de negocios</h1>
-    <p class="hero-sub">Automatizamos procesos críticos con agentes de IA que observan, deciden y ejecutan. ROI comprobable en el P&amp;L desde el primer proyecto.</p>
+    <span class="hero-tag">Diagnóstico · Arquitectura · Business Case · PMO</span>
+    <h1>Transformación Digital<br>para mejorar <em>resultados</em></h1>
+    <p class="hero-sub">Convertimos limitantes en ventajas competitivas.</p>
+    <p style="font-size:.9rem;color:var(--w50);margin-bottom:2.5rem;">Especialistas en Retail · CPG · Tecnología/SaaS &nbsp;·&nbsp; Chile y Latinoamérica</p>
     <div class="hero-actions">
       <a href="#contacto" class="btn-primary">Agendar diagnóstico — 60 min</a>
       <a href="#metodologia" class="btn-ghost">Ver metodología</a>
@@ -159,147 +160,114 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
     <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&q=80&fit=crop" alt="Equipo analizando pantalla con IA" style="width:100%;border-radius:6px;border:1px solid var(--w20);object-fit:cover;height:420px;display:block;object-position:center top"/>
   </div>
 </section>
- 
+
 <div class="stats">
-  <div class="stat"><span class="stat-num">+25</span><span class="stat-label">años experiencia ejecutiva</span></div>
+  <div class="stat"><span class="stat-num">22+</span><span class="stat-label">años experiencia en retail y transformación digital</span></div>
   <div class="stat"><span class="stat-num">Tier 1</span><span class="stat-label">clientes retail en LATAM</span></div>
-  <div class="stat"><span class="stat-num">−70%</span><span class="stat-label">costo por proceso automatizado</span></div>
-  <div class="stat"><span class="stat-num">30d</span><span class="stat-label">primer piloto con ROI medible</span></div>
+  <div class="stat"><span class="stat-num">3</span><span class="stat-label">industrias: Retail · CPG · Tecnología/SaaS</span></div>
+  <div class="stat"><span class="stat-num">LATAM</span><span class="stat-label">Chile y Latinoamérica</span></div>
 </div>
- 
+
 <section class="problema">
   <p class="section-tag">El problema</p>
   <h2>Procesos críticos que frenan<br>tu competitividad hoy</h2>
   <p class="section-intro">Las empresas líderes enfrentan un desafío estructural: operaciones manuales que generan costos, errores y decisiones tardías.</p>
   <div class="problema-grid">
-    <div class="problema-card"><h3>Procesos manuales</h3><p>Operaciones críticas aún dependen de intervención humana, generando cuellos de botella, errores y costos evitables.</p></div>
-    <div class="problema-card"><h3>Decisiones tardías</h3><p>Información desactualizada lleva a decisiones financieras con datos obsoletos — impactando directamente el margen.</p></div>
-    <div class="problema-card"><h3>IA sin impacto real</h3><p>IA usada solo como chat o experimentos aislados, sin integración operativa ni impacto medible en el P&amp;L.</p></div>
-    <div class="problema-card"><h3>Baja trazabilidad</h3><p>Ausencia de control y auditabilidad en procesos críticos genera riesgo operativo y de compliance.</p></div>
+    <div class="problema-card"><h3>Datos sin valor accionable</h3><p>Sistemas ERP/WMS llenos de datos pero sin analítica predictiva. Decisiones de compra, precio e inventario basadas en experiencia, no en modelos.</p></div>
+    <div class="problema-card"><h3>Procesos manuales costosos</h3><p>Conciliación de facturas, devoluciones, planificación de demanda y reabastecimiento siguen siendo intensivos en tiempo humano.</p></div>
+    <div class="problema-card"><h3>Pilotos IA que no escalan</h3><p>El 70% de los proyectos IA quedan en POC. Falta arquitectura, governance de datos y gestión del cambio para llegar a producción.</p></div>
+    <div class="problema-card"><h3>Inversión sin retorno claro</h3><p>Las áreas invierten en tecnología sin un business case que justifique ante el CFO. Sin ROI medible no hay aprobación presupuestaria.</p></div>
+    <div class="problema-card"><h3>Proveedores de tecnología, no resultados</h3><p>El mercado ofrece plataformas y herramientas, pero pocos consultores traducen IA a mejoras operacionales con accountability.</p></div>
+    <div class="problema-card"><h3>Urgencia competitiva real</h3><p>Los grandes retailers ya implementan IA en pricing, forecasting y supply chain. La brecha se amplía cada trimestre que no se actúa.</p></div>
   </div>
 </section>
- 
-<section>
-  <p class="section-tag">Cambio de paradigma</p>
-  <h2>La diferencia no es técnica,<br>es estratégica</h2>
-  <p class="section-intro">IA proactiva genera impacto estructural en productividad y EBITDA. No es lo mismo responder preguntas que ejecutar decisiones.</p>
-  <div class="paradigma-grid">
-    <div class="paradigma-box reactiva">
-      <div class="paradigma-label">IA Reactiva — mercado actual</div>
-      <h3>Responde cuando le preguntan</h3>
-      <ul class="paradigma-list">
-        <li>Sistemas conversacionales</li>
-        <li>Dependencia del usuario</li>
-        <li>Impacto limitado y puntual</li>
-        <li>Sin integración operativa</li>
-      </ul>
-    </div>
-    <div class="paradigma-box proactiva">
-      <div class="paradigma-label">IA Proactiva — lo que implementamos</div>
-      <h3>Observa, decide y ejecuta</h3>
-      <ul class="paradigma-list">
-        <li>Agentes autónomos end-to-end</li>
-        <li>Iniciativa propia con reglas de negocio</li>
-        <li>Impacto estructural en EBITDA</li>
-        <li>Integración nativa con sistemas legados</li>
-      </ul>
-    </div>
-  </div>
-</section>
- 
+
+
+
 <section class="diferenciadores">
   <p class="section-tag">Por qué Processa</p>
-  <h2>Tres diferenciadores que<br>definen el resultado</h2>
+  <h2>Diferenciadores clave</h2>
   <div class="dif-grid">
-    <div class="dif-card"><div class="dif-num">01</div><h3>Experiencia profunda en Retail y Tecnología</h3><p>El éxito depende de conocer los procesos reales. Venimos de operar y transformar los sistemas que ahora automatizamos — Cencosud, Oracle, clientes Tier 1 LATAM.</p></div>
-    <div class="dif-card"><div class="dif-num">02</div><h3>Sistemas operativos, no chatbots</h3><p>Cada caso de uso se implementa con decisión trazable, explicable y revisable. No vendemos demos — entregamos sistemas que cumplen su objetivo en tiempo y forma.</p></div>
-    <div class="dif-card"><div class="dif-num">03</div><h3>Resultados financieros medibles</h3><p>ROI cuantificado desde el piloto. Impacto en EBITDA visible en el corto plazo. Medimos métricas en todo momento.</p></div>
+    <div class="dif-card"><div class="dif-num">01</div><h3>Método probado</h3><p>Diagnóstico → arquitectura → business case → PMO, probado en Fortune 500 y PyMEs LATAM.</p></div>
+    <div class="dif-card"><div class="dif-num">02</div><h3>Modelo aliado</h3><p>No dependes de un solo proveedor. Seleccionamos e integramos el ecosistema tecnológico óptimo para ti.</p></div>
+    <div class="dif-card"><div class="dif-num">03</div><h3>ADN retail/CPG</h3><p>12 años en Cencosud = entendemos tus procesos y dolores mejor que cualquier firma generalista.</p></div>
+    <div class="dif-card"><div class="dif-num">04</div><h3>Consultor senior</h3><p>Ricardo lidera cada proyecto. No sub-contratamos el valor intelectual.</p></div>
+    <div class="dif-card"><div class="dif-num">05</div><h3>Foco en resultados</h3><p>Definimos KPIs antes de empezar con business case.</p></div>
   </div>
 </section>
- 
+
 <section id="metodologia">
   <p class="section-tag">Metodología</p>
-  <h2>De los dolores al ROI,<br>sin atajos</h2>
-  <p class="section-intro">Cada fase entrega valor tangible y prepara la siguiente. Resultados desde el primer día.</p>
-  <div class="metodologia-steps">
+  <h2>Metodología Processa –<br>De la diagnosis al resultado medible</h2>
+  <div class="metodologia-steps" style="grid-template-columns:repeat(4,1fr)">
     <div class="step">
       <div class="step-circle">1</div>
-      <div class="step-time">60 minutos</div>
-      <h3>Diagnóstico ejecutivo</h3>
-      <p>Identificación de oportunidades y priorización por impacto financiero y viabilidad técnica. Sin costo.</p>
+      <div class="step-time">2–3 semanas</div>
+      <h3>Diagnóstico Funcional y Técnico</h3>
+      <p>Entrevistas: Ops, TI, Comercial, Finanzas · Mapeo de procesos críticos AS-IS · Evaluación de madurez digital y datos · Identificación de quick wins y valor potencial.</p>
     </div>
     <div class="step">
       <div class="step-circle">2</div>
-      <div class="step-time">2 semanas</div>
-      <h3>Levantamiento y propuesta</h3>
-      <p>Procesos As-Is, arquitectura To-Be con IA, roadmap de implementación y propuesta económica con ROI proyectado.</p>
+      <div class="step-time">2–3 semanas</div>
+      <h3>Arquitectura To-Be</h3>
+      <p>Propuesta de mejora de procesos · Selección de tecnologías y plataformas óptimas · Plan de datos e integración de sistemas · Roadmap de implementación priorizado.</p>
     </div>
     <div class="step">
       <div class="step-circle">3</div>
-      <div class="step-time">30+ días</div>
-      <h3>Piloto y escalamiento</h3>
-      <p>Despliegue en entorno real con métricas definidas. Optimización continua y medición de ROI acumulado.</p>
+      <div class="step-time">1–2 semanas</div>
+      <h3>Business Case y Aprobación</h3>
+      <p>Modelamiento financiero: inversión vs retorno · KPIs de proceso y negocio por iniciativa · Análisis de riesgo · Presentación ejecutiva para el directorio.</p>
+    </div>
+    <div class="step">
+      <div class="step-circle">4</div>
+      <div class="step-time">Continuo</div>
+      <h3>PMO de Implementación</h3>
+      <p>Gestión del proyecto con aliados tecnológicos · Governance y control de avance vs KPIs · Gestión del cambio y adopción · Revisiones ejecutivas mensuales.</p>
     </div>
   </div>
 </section>
- 
-<section class="casos">
-  <p class="section-tag">Casos de uso</p>
-  <h2>Procesos que automatizamos<br>hoy con agentes de IA</h2>
-  <p class="section-intro">Ejemplos reales en retail y tecnología con impacto medible en operaciones y márgenes.</p>
-  <table class="casos-table">
-    <thead><tr><th>Área</th><th>Caso de uso</th><th>Beneficios de referencia</th></tr></thead>
-    <tbody>
-      <tr><td><span class="area-badge">Finanzas</span></td><td>Invoice matching automático (3-way match)</td><td><span class="metric">5 días → &lt;4 horas</span> · Costo por factura −70% · Detección de fraude +60%</td></tr>
-      <tr><td><span class="area-badge">Finanzas</span></td><td>Cierre contable mensual automatizado</td><td><span class="metric">7 días → 2 días</span> · Errores de asientos −90% · Libera 2-3 contadores para análisis</td></tr>
-      <tr><td><span class="area-badge">Comercial</span></td><td>Dynamic pricing automatizado</td><td><span class="metric">Margen bruto +2-4 puntos</span> · Ventas categorías optimizadas +8-12%</td></tr>
-      <tr><td><span class="area-badge">Comercial</span></td><td>Planificación de surtido por tienda</td><td><span class="metric">Rotación de inventario +15-20%</span> · Merma −25% · Tiempo planificación −60%</td></tr>
-      <tr><td><span class="area-badge">Logística</span></td><td>Detección de quiebres de stock en tiempo real</td><td><span class="metric">Quiebres detectados en &lt;15 min</span> vs 4 hrs · Ventas perdidas recuperadas +3-5%</td></tr>
-      <tr><td><span class="area-badge">Logística</span></td><td>Control de recepción de mercadería en CD</td><td><span class="metric">Diferencias no gestionadas −80%</span> · Tiempo de recepción −40%</td></tr>
-    </tbody>
-  </table>
-  <div class="spotlight">
-    <h3>Caso destacado: Invoice Matching</h3>
-    <p class="spotlight-sub">Para empresas con 1.000+ facturas/mes procesadas manualmente — resultados a validar en piloto</p>
-    <div class="spotlight-metrics">
-      <div class="spotlight-metric"><span class="big">−70%</span><span class="label">Costo por factura</span></div>
-      <div class="spotlight-metric"><span class="big">4h</span><span class="label">Ciclo de pago (vs 5 días)</span></div>
-      <div class="spotlight-metric"><span class="big">+60%</span><span class="label">Detección de fraude</span></div>
-      <div class="spotlight-metric"><span class="big">80%+</span><span class="label">Aprobación automática</span></div>
-    </div>
-  </div>
-</section>
- 
+
+
+
 <section class="sobre">
   <div class="sobre-inner">
     <div class="sobre-left">
       <p class="section-tag">El fundador</p>
       <h2>Ricardo Valenzuela G.</h2>
       <p>Ingeniero Civil Industrial (UTFSM) + MBA (UAI). Más de 25 años liderando transformación digital y ecommerce en empresas de retail y tecnología de primer nivel en Chile y LATAM.</p>
-      <p>Antes de fundar Processa: Business &amp; Innovation Architect en Oracle LATAM (2019–2026) y Gerente de Negocios Digitales en Cencosud (2007–2016).</p>
+      <p>Antes de fundar Processa: Senior Consultant en Oracle LATAM (2019–2026) y Gerente de Negocios Digitales en Cencosud (2007–2016).</p>
     </div>
     <div class="sobre-right">
       <div class="credenciales">
-        <div class="credencial"><div class="credencial-empresa">Oracle LATAM — 7 años</div><div class="credencial-detalle">Business &amp; Innovation Architect. Asesoría a C-levels de retail Tier 1. Cierre de oportunidades USD 1.5M+ anuales. Clientes: Inretail, Cencosud, ABC, D1 Colombia, GDN Argentina.</div></div>
-        <div class="credencial"><div class="credencial-empresa">Cencosud — 12 años</div><div class="credencial-detalle">Lanzamiento eCommerce Easy.cl y easy.com.ar. Roadmap omnicanal con Accenture y Javelin UK. Crecimiento sostenido +50% anual en ventas digitales.</div></div>
-        <div class="credencial"><div class="credencial-empresa">Poder Digital — CDO Consultor</div><div class="credencial-detalle">Roadmaps estratégicos para 11 empresas. Caso Electrolux: ecosistema eCommerce y logística en 8 meses.</div></div>
+        <div class="credencial">
+          <div class="credencial-empresa">Oracle LATAM — 7 años</div>
+          <div class="credencial-detalle">Senior consultant en transformación digital. Metodología diagnóstico funcional/técnico, arquitectura to-be y PMO de implementación. Clientes: Falabella (Planificación Comercial), Cencosud (WMS), D1 Colombia (ERP+Mercaderías+Warehouse), Entel (POS+OMS), Forus (ERP), Maui (POS+Order Management), GDN Argentina.</div>
+        </div>
+        <div class="credencial">
+          <div class="credencial-empresa">Cencosud — 12 años</div>
+          <div class="credencial-detalle">Transformación digital de operaciones retail a escala corporativa. Gestión de procesos digitales, supply chain, marketing y servicio al cliente en operaciones multi-país. Lanzamiento desde cero de Easy.cl y easy.com.ar. Roadmap omnicanal con Accenture y Javelin UK. Crecimiento sostenido +50% anual en ventas digitales.</div>
+        </div>
+        <div class="credencial">
+          <div class="credencial-empresa">Poder Digital — CDO Consultor (2017–2019)</div>
+          <div class="credencial-detalle">Roadmaps estratégicos para 11 empresas. Casos destacados: Electrolux/Mademsa — lanzamiento ecommerce y tienda oficial en Mercado Libre en 8 meses; Librería Antartica — digitalización de procesos comerciales y cadena de suministro; Pesquera Camanchaca — evaluación de negocios digitales y roadmap de transformación; Inverfin Paraguay — más de 50 iniciativas de transformación digital.</div>
+        </div>
       </div>
       <div class="sistemas">
         <div class="sistemas-label">Sistemas de experiencia</div>
         <div class="sistemas-tags">
-          <span class="tag">ERP</span><span class="tag">WMS</span><span class="tag">TMS</span><span class="tag">OMS</span><span class="tag">POS</span><span class="tag">CRM</span><span class="tag">Oracle Cloud</span><span class="tag">Agentes IA</span>
+          <span class="stag">ERP</span><span class="stag">WMS</span><span class="stag">TMS</span><span class="stag">OMS</span><span class="stag">POS</span><span class="stag">CRM</span><span class="stag">Oracle Cloud</span><span class="stag">Agentes IA</span>
         </div>
       </div>
     </div>
   </div>
 </section>
- 
+
 <section class="contacto" id="contacto">
   <p class="section-tag">Contacto</p>
   <h2>¿Conversamos?</h2>
   <p class="contacto-sub">Diagnóstico inicial sin costo · 60 minutos · Sin compromiso</p>
   <p class="contacto-detail">Identificamos el primer proceso con ROI en 2 semanas</p>
-  <form class="contacto-form" action="mailto:ricardo@processa.work" method="post" enctype="text/plain">
+  <form class="contacto-form" onsubmit="handleForm(event)">
     <div class="form-row">
       <input type="text" name="Nombre" placeholder="Nombre" required>
       <input type="text" name="Empresa" placeholder="Empresa" required>
@@ -308,15 +276,15 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
     <textarea name="Mensaje" placeholder="¿Qué proceso te gustaría automatizar?"></textarea>
     <button type="submit" class="form-submit">Agendar diagnóstico gratuito</button>
   </form>
-  <p style="margin-top:1.5rem;font-size:.85rem;color:var(--w50)">O escríbenos directamente a <a href="mailto:ricardo@processa.work" style="color:var(--accent)">ricardo@processa.work</a></p>
+  <p style="margin-top:1.5rem;font-size:.85rem;color:var(--w50)">O escríbenos directamente a <a href="/cdn-cgi/l/email-protection#5a2833393b283e351a2a2835393f29293b742d352831" style="color:var(--accent)"><span class="__cf_email__" data-cfemail="483a212b293a2c2708383a272b2d3b3b29663f273a23">[email&#160;protected]</span></a></p>
 </section>
- 
+
 <footer>
   <div class="footer-left">© 2026 Processa · processa.work</div>
-  <div class="footer-right"><a href="mailto:ricardo@processa.work">ricardo@processa.work</a> · <a href="https://linkedin.com/in/rvalenzuelag" target="_blank">LinkedIn</a></div>
+  <div class="footer-right"><a href="/cdn-cgi/l/email-protection#a8dac1cbc9daccc7e8d8dac7cbcddbdbc986dfc7dac3"><span class="__cf_email__" data-cfemail="33415a505241575c7343415c50564040521d445c4158">[email&#160;protected]</span></a> · <a href="https://linkedin.com/in/rvalenzuelag" target="_blank">LinkedIn</a></div>
 </footer>
- 
-<script>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function handleForm(e){
   e.preventDefault();
   const btn=e.target.querySelector('.form-submit');
