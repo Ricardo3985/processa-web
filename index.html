@@ -45,7 +45,7 @@ section{padding:6rem 4rem}
 h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2;margin-bottom:1.5rem}
 .section-intro{font-size:1.05rem;color:var(--w80);max-width:600px;margin-bottom:3.5rem;line-height:1.8}
 .problema{background:var(--navy-mid)}
-.problema-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.problema-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .problema-card{background:var(--navy);border:1px solid var(--w20);border-top:2px solid var(--blue);padding:2rem;border-radius:2px;transition:border-color .2s}
 .problema-card:hover{border-color:var(--blue-light)}
 .problema-card h3{font-size:1rem;font-weight:500;margin-bottom:.75rem}
@@ -61,7 +61,7 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-
 .paradigma-list li::before{content:'→';position:absolute;left:0;color:var(--blue-light)}
 .paradigma-box.reactiva .paradigma-list li::before{color:var(--w50)}
 .diferenciadores{background:var(--navy-mid)}
-.dif-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem}
+.dif-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .dif-card{padding:2.5rem 2rem;border-left:2px solid var(--blue);background:var(--navy)}
 .dif-num{font-family:'Playfair Display',serif;font-size:3rem;color:rgba(37,99,235,.2);line-height:1;margin-bottom:1rem}
 .dif-card h3{font-size:1rem;font-weight:500;margin-bottom:.75rem}
@@ -150,7 +150,7 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
     <span class="hero-tag">Diagnóstico · Arquitectura · Business Case · PMO</span>
     <h1>Transformación Digital<br>para mejorar <em>resultados</em></h1>
     <p class="hero-sub">Convertimos limitantes en ventajas competitivas.</p>
-    <p style="font-size:.9rem;color:var(--w50);margin-bottom:2.5rem;">Especialistas en Retail · CPG · Tecnología/SaaS &nbsp;·&nbsp; Chile y Latinoamérica</p>
+    <p style="font-size:.9rem;color:var(--w50);margin-bottom:2.5rem;">Especialistas en Retail · Tecnología/SaaS &nbsp;·&nbsp; Chile y Latinoamérica</p>
     <div class="hero-actions">
       <a href="#contacto" class="btn-primary">Agendar diagnóstico — 60 min</a>
       <a href="#metodologia" class="btn-ghost">Ver metodología</a>
@@ -164,7 +164,7 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
 <div class="stats">
   <div class="stat"><span class="stat-num">22+</span><span class="stat-label">años experiencia en retail y transformación digital</span></div>
   <div class="stat"><span class="stat-num">Tier 1</span><span class="stat-label">clientes retail en LATAM</span></div>
-  <div class="stat"><span class="stat-num">3</span><span class="stat-label">industrias: Retail · CPG · Tecnología/SaaS</span></div>
+  <div class="stat"><span class="stat-num">3</span><span class="stat-label">Experiencia en Retail y Tecnologías</span></div>
   <div class="stat"><span class="stat-num">LATAM</span><span class="stat-label">Chile y Latinoamérica</span></div>
 </div>
 
@@ -173,12 +173,9 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
   <h2>Procesos críticos que frenan<br>tu competitividad hoy</h2>
   <p class="section-intro">Las empresas líderes enfrentan un desafío estructural: operaciones manuales que generan costos, errores y decisiones tardías.</p>
   <div class="problema-grid">
-    <div class="problema-card"><h3>Datos sin valor accionable</h3><p>Sistemas ERP/WMS llenos de datos pero sin analítica predictiva. Decisiones de compra, precio e inventario basadas en experiencia, no en modelos.</p></div>
     <div class="problema-card"><h3>Procesos manuales costosos</h3><p>Conciliación de facturas, devoluciones, planificación de demanda y reabastecimiento siguen siendo intensivos en tiempo humano.</p></div>
-    <div class="problema-card"><h3>Pilotos IA que no escalan</h3><p>El 70% de los proyectos IA quedan en POC. Falta arquitectura, governance de datos y gestión del cambio para llegar a producción.</p></div>
     <div class="problema-card"><h3>Inversión sin retorno claro</h3><p>Las áreas invierten en tecnología sin un business case que justifique ante el CFO. Sin ROI medible no hay aprobación presupuestaria.</p></div>
     <div class="problema-card"><h3>Proveedores de tecnología, no resultados</h3><p>El mercado ofrece plataformas y herramientas, pero pocos consultores traducen IA a mejoras operacionales con accountability.</p></div>
-    <div class="problema-card"><h3>Urgencia competitiva real</h3><p>Los grandes retailers ya implementan IA en pricing, forecasting y supply chain. La brecha se amplía cada trimestre que no se actúa.</p></div>
   </div>
 </section>
 
@@ -190,8 +187,8 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
   <div class="dif-grid">
     <div class="dif-card"><div class="dif-num">01</div><h3>Método probado</h3><p>Diagnóstico → arquitectura → business case → PMO, probado en Fortune 500 y PyMEs LATAM.</p></div>
     <div class="dif-card"><div class="dif-num">02</div><h3>Modelo aliado</h3><p>No dependes de un solo proveedor. Seleccionamos e integramos el ecosistema tecnológico óptimo para ti.</p></div>
-    <div class="dif-card"><div class="dif-num">03</div><h3>ADN retail/CPG</h3><p>12 años en Cencosud = entendemos tus procesos y dolores mejor que cualquier firma generalista.</p></div>
-    <div class="dif-card"><div class="dif-num">04</div><h3>Consultor senior</h3><p>Ricardo lidera cada proyecto. No sub-contratamos el valor intelectual.</p></div>
+    <div class="dif-card"><div class="dif-num">03</div><h3>ADN retail</h3><p>12 años en Cencosud = entendemos tus procesos y dolores mejor que cualquier firma generalista.</p></div>
+    <div class="dif-card"><div class="dif-num">04</div><h3>Consultor senior dedicado</h3><p>El consultor lidera cada proyecto. No sub-contratamos el valor intelectual.</p></div>
     <div class="dif-card"><div class="dif-num">05</div><h3>Foco en resultados</h3><p>Definimos KPIs antes de empezar con business case.</p></div>
   </div>
 </section>
@@ -276,12 +273,12 @@ footer{background:var(--navy);border-top:1px solid var(--w20);padding:2rem 4rem;
     <textarea name="Mensaje" placeholder="¿Qué proceso te gustaría automatizar?"></textarea>
     <button type="submit" class="form-submit">Agendar diagnóstico gratuito</button>
   </form>
-  <p style="margin-top:1.5rem;font-size:.85rem;color:var(--w50)">O escríbenos directamente a <a href="/cdn-cgi/l/email-protection#5a2833393b283e351a2a2835393f29293b742d352831" style="color:var(--accent)"><span class="__cf_email__" data-cfemail="483a212b293a2c2708383a272b2d3b3b29663f273a23">[email&#160;protected]</span></a></p>
+  <p style="margin-top:1.5rem;font-size:.85rem;color:var(--w50)">O escríbenos directamente a <a href="/cdn-cgi/l/email-protection#fd8f949e9c8f9992bd8d8f929e988e8e9cd38a928f96" style="color:var(--accent)"><span class="__cf_email__" data-cfemail="0e7c676d6f7c6a614e7e7c616d6b7d7d6f2079617c65">[email&#160;protected]</span></a></p>
 </section>
 
 <footer>
   <div class="footer-left">© 2026 Processa · processa.work</div>
-  <div class="footer-right"><a href="/cdn-cgi/l/email-protection#a8dac1cbc9daccc7e8d8dac7cbcddbdbc986dfc7dac3"><span class="__cf_email__" data-cfemail="33415a505241575c7343415c50564040521d445c4158">[email&#160;protected]</span></a> · <a href="https://linkedin.com/in/rvalenzuelag" target="_blank">LinkedIn</a></div>
+  <div class="footer-right"><a href="/cdn-cgi/l/email-protection#9ceef5fffdeef8f3dceceef3fff9efeffdb2ebf3eef7"><span class="__cf_email__" data-cfemail="83f1eae0e2f1e7ecc3f3f1ece0e6f0f0e2adf4ecf1e8">[email&#160;protected]</span></a> · <a href="https://linkedin.com/in/rvalenzuelag" target="_blank">LinkedIn</a></div>
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
